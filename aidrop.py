@@ -40,7 +40,11 @@ else:
     sys.exit(1)
 
 # check if ipset is already there...
-ipset_present = ipset.list(ipset_name)
+try:
+    ipset_present = ipset.list(ipset_name)
+except:
+    ipset_present = False
+    
 if ipset_present:
     # ...and reset it
     ipset.flush(ipset_name)
