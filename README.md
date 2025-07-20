@@ -9,5 +9,5 @@ Runs on an admin workstation oder automation system, crawls known AI crawler lis
 ### [aidrop.py](aidrop.py)  
 Runs on a webserver or reverse proxy or whatever target system. It creates an ipset from the list it got from the script above
 
-### [ferm.conf](ferm.conf)  
+### [aidrop.conf](aidrop.conf)  
 An input chain configuraton snippet for a [ferm](https://github.com/MaxKellermann/ferm) ruleset.
