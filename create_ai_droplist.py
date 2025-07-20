@@ -109,7 +109,7 @@ with open(output_file, 'w') as output:
         output.write(entry + '\n')
 
 ssh = paramiko.SSHClient()
-ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh.load_system_host_keys()
 for target in subscribers:
     ssh.connect(target, username='scpuser', password='', key_filename='/home/scpuser/.ssh/id_ed25519')
     ssh.open_sftp().put(output_file,output_file)
