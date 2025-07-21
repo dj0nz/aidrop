@@ -4,11 +4,13 @@
 #
 # this is the first part: it runs on a management system (an ansible host would be perfect) 
 # and downloads json from a bunch of sources. then it creates a plain list with ipv4 
-# prefixes and uploads that to its subscribers (webservers etc.). instead of uploading
-# and processing by the second script, you may use ansible or any other automation tool.
+# prefixes and uploads that to its subscribers (webservers etc.). 
 #
 # the second part, running on the subscriber itself, updates an ipset if
-# there is an updated prefix list
+# there is an updated prefix list.
+#
+# if you're using ansible or any other automation tool, you might know what to do
+# with the output instead of copying it and running a second script on the target hosts... ;)
 #
 # dj0Nz jul 2025
 
