@@ -1,8 +1,12 @@
-i#!/usr/bin/python3
+#!/usr/bin/python3
 
 # create ipset from aibots.prefixes to block with iptables
+#
 # for this to work, the pyroute2 module has to be installed
 # either using pip or the debian package (python3-pyroute2)
+#
+# and, of course, this script needs a droplist created by
+# the create_ai_droplist script.
 
 # dj0Nz jul 25
 
